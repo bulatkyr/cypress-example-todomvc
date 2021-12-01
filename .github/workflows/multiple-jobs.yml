@@ -1,0 +1,15 @@
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Setting up server"
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building the app"
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing the app"
