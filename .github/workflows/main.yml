@@ -1,4 +1,4 @@
-name: E2E
+name: End-to-end-tests
 on: [push]
 jobs:
   cypress-run:
